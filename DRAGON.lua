@@ -1078,7 +1078,9 @@ srartnew = '🙋︙عضو جديد انضم للبوت \n🧑‍💼┇الاس�
 sendText(1236115319,srartnew,0,'md')
 sendText(1236119,srartnew,0,'md')
 sendText(SUDO,srartnew,0,'md')
-end,nil)
+end
+end,nil) 
+end
 if not DevSoFi(msg) and not database:sismember(bot_id..'Ban:User_Bot',msg.sender_user_id_) and not database:get(bot_id..'Tuasl:Bots') then
 send(msg.sender_user_id_, msg.id_,' 🕊 تم ارسال رسالتك\n 🕊 سيتم رد في اقرب وقت')
 tdcli_function ({ID = "ForwardMessages", chat_id_ = SUDO,    from_chat_id_ = msg.sender_user_id_,    message_ids_ = {[0] = msg.id_},    disable_notification_ = 1,    from_background_ = 1 },function(arg,data) 
@@ -14325,7 +14327,7 @@ Msᴀɢ ~ #msgs
 𖣰𖡻 𖡋𝗔𝗨𝗧𝗢• #auto •𓀎
 𖣰𖡻 𖡋𝗘𝗗𝗜𝗧• #edit • 𓀎
 ┄─━━◉━━─┄
-??𝗛 - @UU_Le2 🕊.
+𝗖𝗛 - @UU_Le2 🕊.
 ]],
 [[
 𖤍 |↶ #id    ꙰🇪🇬.
@@ -14782,7 +14784,7 @@ Msᴀɢ ~ #msgs
 ]],
 [[
 ➜𝗨𝗦𝗘𝗥𝗡𝗔𝗠𝗘 : #username
-➜𝗠𝗘𝗦𝗦??𝗚𝗘𝗦 : #msgs
+➜??𝗘𝗦𝗦??𝗚𝗘𝗦 : #msgs
 ➜𝗦𝗧𝗔𝗧𝗦 : #stast
 ➜𝗜𝗗 : #id
 ➜𝗖𝗛 - @UU_Le2 🕊
