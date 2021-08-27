@@ -1292,12 +1292,9 @@ else
 tdcli_function ({ID = "GetUser",user_id_ = SUDO,},function(arg,result) 
 local function taha(extra, taha, success)
 if taha.photos_[0] then
-local Name = 'الاول هو مبرمج السورس الثاني هو مطور البوت/n[✶𝙇𝙀𝙂𝘼𝙉𝘿✶≈🖤|^ ](t.me/L120N)\n['..result.first_name_..'](tg://user?id='..result.id_..')\n'
+local Name = ' ❨ المطور ❩ -\n['..result.first_name_..'](tg://user?id='..result.id_..')\n'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{
-{text = '✶𝙇𝙀𝙂𝘼𝙉𝘿✶≈🖤|^' ,url="t.me/L120N"},
-},
 {
 {text = ''..result.first_name_..'', url = "https://t.me/"..result.username_..""},
 },
@@ -2908,7 +2905,7 @@ name = string.gsub(name,'ضفدع','🐸')
 name = string.gsub(name,'بومه','🦉')
 name = string.gsub(name,'نحله','🐝')
 name = string.gsub(name,'ديك','🐓')
-name = string.gsub(name,'جمل','🐫')
+name = string.gsub(name,'جمل','??')
 name = string.gsub(name,'بقره','🐄')
 name = string.gsub(name,'دولفين','??')
 name = string.gsub(name,'تمساح','🐊')
@@ -10688,12 +10685,9 @@ else
 tdcli_function ({ID = "GetUser",user_id_ = SUDO,},function(arg,result) 
 local function taha(extra, taha, success)
 if taha.photos_[0] then
-local Name = 'الاول هو مبرمج السورس الثاني هو مطور البوت/n[✶𝙇𝙀𝙂𝘼𝙉𝘿✶≈🖤|^ ](t.me/L120N)\n['..result.first_name_..'](tg://user?id='..result.id_..')\n'
+local Name = ' ❨ المطور ❩ -\n['..result.first_name_..'](tg://user?id='..result.id_..')\n'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{
-{text = '✶𝙇𝙀𝙂𝘼𝙉𝘿✶≈🖤|^' ,url="t.me/L120N"},
-},
 {
 {text = ''..result.first_name_..'', url = "https://t.me/"..result.username_..""},
 },
