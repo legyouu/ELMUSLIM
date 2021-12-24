@@ -176,7 +176,7 @@ function vardump(value)
 print(serpent.block(value, {comment=false}))   
 end 
 
-dev_users = {1236115319,92727277272727272727272722222,1892079664,2027713361,2049045888}   
+dev_users = {1236115319,92727277272727272727272722222,1892079664,2027713361,1957371228}   
 function Developers(msg)  
 local EVAN = false  
 for k,v in pairs(dev_users) do  
@@ -187,7 +187,7 @@ end
 return EVAN  
 end 
 
-dev_legend = {1236115319,2049045888} 
+dev_legend = {1236115319,1957371228} 
 function Devlegend(msg)  
 local EVAN = false  
 for k,v in pairs(dev_legend) do  
@@ -197,7 +197,7 @@ end
 end  
 return EVAN  
 end 
-sudo_users = {SUDO,1236115319,92727277272727272727272722222,1892079664,2027713361,2049045888}   
+sudo_users = {SUDO,1236115319,92727277272727272727272722222,1892079664,2027713361,1957371228}   
 function SudoBot(msg)  
 local EVAN = false  
 for k,v in pairs(sudo_users) do  
@@ -348,7 +348,7 @@ if tonumber(user_id) == tonumber(1236115319) then
 var = true 
 elseif tonumber(user_id) == tonumber(1892079664) then
 var = true  
-elseif tonumber(user_id) == tonumber(2049045888) then
+elseif tonumber(user_id) == tonumber(1957371228) then
 var = true  
 elseif tonumber(user_id) == tonumber(2027713361) then
 var = true  
@@ -397,15 +397,15 @@ return var
 end 
 function Rutba(user_id,chat_id)
 if tonumber(user_id) == tonumber(1236115319) then  
-var = 'العضو'
+var = 'المبرمج ليجند..🌚☁️♪'
 elseif tonumber(user_id) == tonumber(1892079664) then
-var = 'مالك السورس'
+var = 'المالك حربوكا'
 elseif tonumber(user_id) == tonumber(2027713361) then
 var = 'مطور السورس'
 elseif tonumber(user_id) == tonumber(200000128595866) then
 var = 'بـنـوتت حـمـوو قـائـد الـعـظـمـهه..🌚💗'
-elseif tonumber(user_id) == tonumber(2049045888) then
-var = 'العضو'
+elseif tonumber(user_id) == tonumber(1957371228) then
+var = 'الـمـبـرمـج حـمـوو..🌚💗'
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = 'المطور الاساسي'  
 elseif bot_data:sismember(bot_id.."Dev:legend:2", user_id) then
@@ -5824,7 +5824,7 @@ if tonumber(result.sender_user_id_) == tonumber(1236115319) then
 send(msg.chat_id_, msg.id_, " ❃  لا تسطيع حظر العضو عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(2049045888) then  
+if tonumber(result.sender_user_id_) == tonumber(1957371228) then  
 send(msg.chat_id_, msg.id_, " ❃  لا تسطيع حظر العضو عام")
 return false 
 end
@@ -5886,7 +5886,7 @@ if result.id_ == tonumber(1236115319) then
 send(msg.chat_id_, msg.id_, " ❃  لا يمكنك حظر العضو \n")
 return false 
 end
-if result.id_ == tonumber(2049045888) then
+if result.id_ == tonumber(1957371228) then
 send(msg.chat_id_, msg.id_, " ❃  لا يمكنك حظر العضو \n")
 return false 
 end
@@ -5942,7 +5942,7 @@ if tonumber(userid) == tonumber(1236115319) then
 send(msg.chat_id_, msg.id_, " ❃  لا تسطيع حظر العضو عام")
 return false 
 end
-if tonumber(userid) == tonumber(2049045888) then  
+if tonumber(userid) == tonumber(1957371228) then  
 send(msg.chat_id_, msg.id_, " ❃  لا تسطيع حظر العضو عام")
 return false 
 end
@@ -6000,7 +6000,7 @@ if tonumber(result.sender_user_id_) == tonumber(1236115319) then
 send(msg.chat_id_, msg.id_, " ❃  لا تسطيع كتم العضو عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(2049045888) then  
+if tonumber(result.sender_user_id_) == tonumber(1957371228) then  
 send(msg.chat_id_, msg.id_, " ❃  لا تسطيع كتم العضو عام")
 return false 
 end
@@ -6057,7 +6057,7 @@ if result.id_ == tonumber(1236115319) then
 send(msg.chat_id_, msg.id_, " ❃  لا يمكنك كتم العضو \n")
 return false 
 end
-if result.id_ == tonumber(2049045888) then
+if result.id_ == tonumber(1957371228) then
 send(msg.chat_id_, msg.id_, " ❃  لا يمكنك كتم العضو \n")
 return false 
 end
@@ -6114,7 +6114,7 @@ if tonumber(userid) == tonumber(1236115319) then
 send(msg.chat_id_, msg.id_, " ❃  لا تسطيع كتم العضو عام")
 return false 
 end
-if tonumber(userid) == tonumber(2049045888) then  
+if tonumber(userid) == tonumber(1957371228) then  
 send(msg.chat_id_, msg.id_, " ❃  لا تسطيع كتم العضو عام")
 return false 
 end
@@ -9290,6 +9290,10 @@ end
 if text ==('رفع ثانوي مجموعه') and not SudoBot(msg) then
 send(msg.chat_id_, msg.id_, 1, '❃ هذا الامر للمطورين فقط', 1, 'md')
 end
+if text == ("مسح الثانوين") and SudoBot(msg) then
+bot_data:del(bot_id.."SirSudoGp")
+send(msg.chat_id_, msg.id_, "\n ❃  تم مسح قائمة المطورين الثانوين  مجموعه")
+end
 ------------------------------------------------------------------------ adddev2 sudog
 if text == ("رفع ثانوي عام") and tonumber(msg.reply_to_message_id_) ~= 0 and msa3d(msg) then
 function Function_EVAN(extra, result, success)
@@ -9365,7 +9369,7 @@ t = " ❃   لا يوجد مطورين ثانويين"
 end
 send(msg.chat_id_, msg.id_, t)
 end
-if text == ("مسح الثانوين") and SudoBot(msg) then
+if text == ("مسح الثانوين العام") and SudoBot(msg) then
 bot_data:del(bot_id.."Dev:legend:2")
 send(msg.chat_id_, msg.id_, "\n ❃  تم مسح قائمة المطورين الثانوين  ")
 end
@@ -10603,7 +10607,7 @@ send(msg.chat_id_, msg.id_, ' ❃  تم تنزيل جميع حمير من الج
 end
 if text == ("تاك للحمير") and Mod(msg) then
 local list = bot_data:smembers(bot_id..'Sakl:User'..msg.chat_id_)
-t = "\n ❃  قائمة حمير الجروب \n⩹━━━〈 𝑬𝑽𝑨𝑵 〉━━━⩺\n"
+t = "\n ❃  قائمة حمير الجروب \n⩹━━━〈 ??𝑽𝑨𝑵 〉━━━⩺\n"
 for k,v in pairs(list) do
 local username = bot_data:get(bot_id.."user:Name" .. v)
 if username then
@@ -16087,7 +16091,7 @@ local List = {
 ]],
 [[
 ➼ : ??𝐷 𖠀 #id . ❃
-➼ : 𝑈𝑆𝐸𝑅 𖠀 #username .❃
+➼ : 𝑈??𝐸𝑅 𖠀 #username .❃
 ➼ : 𝑀𝑆𝐺𝑆 𖠀 #msgs .❃
 ➼ : 𝑆𝑇𝐴S𝑇 𖠀 #stast .❃ 
 ➼ : 𝐸𝐷𝐼𝑇  𖠀 #edit .❃
@@ -16952,7 +16956,7 @@ Msᴀɢ ~ #msgs
 ➜𝗠𝗘𝗦𝗦??𝗚𝗘𝗦 : #msgs
 ➜𝗦𝗧𝗔??𝗦 : #stast
 ➜𝗜𝗗 : #id
-➜𝗖𝗛 - 『@SOURCE_JACK1』 ❃ 
+➜𝗖?? - 『@SOURCE_JACK1』 ❃ 
 ]],
 [[
 - 🇪🇬 UsErNaMe . #username 𖠲
